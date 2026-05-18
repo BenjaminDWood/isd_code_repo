@@ -4,7 +4,7 @@ h1 {
 
 p {
     font-size: 20px;
-} /* Just a little bump (default is 16px), but with the spacing employed it works well to separate content but still keep it visually accessible */
+} /* Just a little bump (default is 16px), but with the spacing mployed it works well to separate content but still keep it visually accessible */
 
 body {
     font-family: Arial, sans-serif;
@@ -27,3 +27,18 @@ nav {
 /* Can also do "padding: 20px 0;" as this splits it top/bottom left/right, but oh well.
 Anyway, this should help separate the nav bar a little from the other content
 Yep, happy with that */
+
+nav ul {
+    display: flex; /* list items now sit side by side */
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Between items? */
+    font-size: 20px;
+}
+
+@media (max-width: 612px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
