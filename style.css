@@ -1,0 +1,29 @@
+h1 {
+    font-size: 32px;
+} /* This must be a default size for h1, as nothing changed, but I don't think it needs to*/
+
+p {
+    font-size: 20px;
+} /* Just a little bump (default is 16px), but with the spacing employed it works well to separate content but still keep it visually accessible */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0 15px; /*Experimented a lot here, but the top is already kind of padded, so it doesn't seem to matter if I add 5px or not. 15px seems reasonable for the edges. */
+} /* The font looks much nicer to my eyes, I find Arial easier to read than TNR, but I'm not sure there's anything to back that up as a generality
+
+The line-height has broken the text up more, which definitely improves readability, but there should be more division between each header/content grouping*/
+
+div {
+    margin-bottom: 60px;
+} /* At this point I added divs to group header/content sections, adding the margin at the bottom SHOULD separate the sections more clearly...
+Bumped it from 40 to 60 as the line-height seems small relative to the margin
+Better, but perhaps the nav needs some separation as well */
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+} 
+/* Can also do "padding: 20px 0;" as this splits it top/bottom left/right, but oh well.
+Anyway, this should help separate the nav bar a little from the other content
+Yep, happy with that */
